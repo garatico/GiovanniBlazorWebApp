@@ -1,0 +1,30 @@
+﻿
+p.card-text {
+    color: dimgrey;
+    font-size: clamp(1rem, 1vw, 3rem);
+}
+
+#blazorpic {
+    border-radius: 99%;
+    width: 180px;
+    height: 180px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#metapic {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+#facepic {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    padding: 5px;
+    margin: 5px;
+}

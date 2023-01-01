@@ -15,35 +15,21 @@
     width: clamp(10vw, 40vw, 80vw);
 }
 
-    #projects_list ul {
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        flex-direction: column;
-    }
-
-        #projects_list ul li#project_title {
-            color: white;
-            font-size: clamp(1rem, 2vw, 5rem);
-        }
-
-        #projects_list ul li#project_desc {
-            color: white;
-            font-size: clamp(1rem, 1vw, 3rem);
-        }
-
-#metapic {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    padding: 5px;
-    margin: 5px;
+#projects_list ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
 }
 
-#facepic {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    padding: 5px;
-    margin: 5px;
+#projects_list ul li#project_title {
+    color: white;
+    font-size: clamp(1rem, 2vw, 5rem);
 }
+
+#projects_list ul li#project_desc {
+    color: white;
+    font-size: clamp(1rem, 1vw, 3rem);
+}
+
+
