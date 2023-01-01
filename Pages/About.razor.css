@@ -1,0 +1,16 @@
+﻿/* CONTENT RELATED STYLINGS */
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em;
+    padding: 1em;
+}
+
+.info {
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-weight: 800;
+    color: white;
+}

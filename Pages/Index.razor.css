@@ -1,0 +1,47 @@
+﻿/* CONTENT RELATED STYLINGS */
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em;
+    padding: 1em;
+}
+
+.info {
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-weight: 800;
+    color: white;
+}
+
+/* INDEX PAGE SPECIFIC STYLING */
+#info_index {
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-weight: 800;
+    color: white;
+}
+ul#giovanni_desc {
+    font-family: 'Titillium Web', sans-serif;
+    margin-left: -1vw;
+    display: block;
+}
+#giovanni_desc li{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 6rem);
+    font-weight: 800;
+    font-style: italic;
+    margin-left: 5vh;
+}
+#welcome_desc {
+    font-family: 'Titillium Web', sans-serif;
+    margin-right: 25vh;
+}
+#twitter-timeline {
+    margin-right: 5vw;
+}
+
+
+
