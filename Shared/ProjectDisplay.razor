@@ -1,0 +1,20 @@
+﻿
+
+<!-- w-20 = WIDTH = 30; -->
+<div class="col-lg-3 w-10 mw-30 h-100">
+    <!-- m-b-3 = MARGIN BOTTOM = 3 -->
+    <div class="card border-primary border-5 m-b-3" style="width: 20vw;">
+        <img src="@myProject.projectImg" alt="@myProject.projectImgAlt" class="card-img-top" id="@myProject.projectImgId">
+        <div class="card-body">
+            <h3 class="card-title">@myProject.projectTitle</h3>
+            <p class="card-text">@myProject.projectDescription</p>
+            <a href="@myProject.projectLink" class="btn btn-primary"> Link to Project</a>
+        </div>
+    </div>
+</div>
+
+@code {
+    [EditorRequired]
+    [Parameter]
+    public Models.Project myProject { get; set; } = new();
+}

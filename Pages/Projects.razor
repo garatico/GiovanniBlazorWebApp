@@ -1,4 +1,8 @@
-﻿@page "/Projects"
+﻿@* DEFINES PAGE ROUTING*@
+@* DEFINES A CLASS OBJECT HTTP for REQUESTS / RESPONSES *@
+
+@page "/Projects"
+@inject HttpClient Http
 
 <PageTitle>Giovanni Aratico | Projects</PageTitle>
 
@@ -10,32 +14,30 @@
         <div class="info" id="info_projects">
             <h2> Portfolio Projects linked through GitHub: </h2>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- PROJECT 3 / BLAZOR WEB APP -->
-            <Project ProjectTitle="Personal Web App Blazor"
-                     ProjectDesc="Demonstrates basics of web frameworks in a front-end focus using Blazor and C#. Utilizies Razor components and ability to deploy simple application."
-                     ProjectLink="https://github.com/garatico/GiovanniBlazorWebApp"
-                     ProjectImg="../img/blazor-logo.png"
-                     ProjectImgAlt="Blazor App"
-                     ProjectImgId="blazorpic"/>
-            <!-- PROJECT 2 / METACRITIC-->
-            <Project ProjectTitle="Metacritic Webscraper"
-                     ProjectDesc="Demonstrates basic programming skills in Python. Utilitizes the libraries Requests, NumPy and BeautifulSoup to collect data and output to usable formats."
-                     ProjectLink="https://github.com/garatico/Metacritic-Scraper"
-                     ProjectImg="../img/meta.png"
-                     ProjectImgAlt="Metacritic"
-                     ProjectImgId="metapic"/>
-            <!-- PROJECT 1-->
-            <Project ProjectTitle="Personal Website"
-                     ProjectDesc="Demonstrates basic web development skills including HTML, CSS and JavaScript in a static web app. Utilitizes Bootstrap styling and demonstrates knowledge of git version control."
-                     ProjectLink="https://github.com/garatico/garatico.github.io"
-                     ProjectImg="../img/face.jpg"
-                     ProjectImgAlt="Giovanni"
-                     ProjectImgId="facepic" />
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="projects_listo">
+            @foreach (var project in myProjects)
+            {
+                <ProjectDisplay myProject="project" />
+            }
         </div>
     </div>
 </div>
 
+
+@code {
+    // Initializes new empty projects list with get/set
+    public List<Models.Project> myProjects { get; set; } = new();
+
+    // protected = Accessible only through derived (sub-class)
+    // override = Used to extend or modify the behavior of a 
+    // async = Defines start of an asynchronous function
+    // Task = Operation performed in an asynchronous manner
+    // OnInitializedAsync() = Invoked when component is ready to start
+    protected override async Task OnInitializedAsync()
+    {
+        myProjects = await Http.GetFromJsonAsync<List<Models.Project>>("../data/Projects.json") ?? new();
+    }
+}
 
 
 

@@ -1,0 +1,35 @@
+[
+  {
+    "projectTitle": "Energy Data Analysis (Python)",
+    "projectDescription": "Demonstrates exploratory data analysis skills using data from world energy. Utilizies Python and Shiny to create a simple data driven application.",
+    "projectLink": "https://github.com/garatico/Energy-Analysis-Python-Shiny-",
+    "projectImg": "../img/shiny-python.png",
+    "projectImgAlt": "Python Shiny",
+    "projectImgId": "pyshypic"
+  },
+  {
+    "projectTitle": "Personal Web App Blazor",
+    "projectDescription": "Demonstrates basics of web frameworks in a front-end focus using Blazor and C#. Utilizies Razor components and ability to deploy simple application.",
+    "projectLink": "https://github.com/garatico/GiovanniBlazorWebApp",
+    "projectImg": "../img/blazor-logo.png",
+    "projectImgAlt": "Blazor",
+    "projectImgId": "blazorpic"
+  },
+  {
+    "projectTitle": "Metacritic Webscraper",
+    "projectDescription": "Demonstrates basic programming skills in Python. Utilitizes the libraries Requests, NumPy and BeautifulSoup to collect data and output to usable formats.",
+    "projectLink": "https://github.com/garatico/Metacritic-Scraper",
+    "projectImg": "../img/meta.png",
+    "projectImgAlt": "Metacritic",
+    "projectImgId": "metapic"
+  },
+  {
+    "projectTitle": "Personal Website",
+    "projectDescription": "Demonstrates basic web development skills including HTML, CSS and JavaScript in a static web app. Utilitizes Bootstrap styling and demonstrates knowledge of git version control",
+    "projectLink": "https://github.com/garatico/garatico.github.io",
+    "projectImg": "../img/face.jpg",
+    "projectImgAlt": "Giovanni",
+    "projectImgId": "facepic"
+  }
+
+]

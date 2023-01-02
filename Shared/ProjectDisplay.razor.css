@@ -4,6 +4,16 @@ p.card-text {
     font-size: clamp(1rem, 1vw, 3rem);
 }
 
+
+#pyshypic {
+    border-radius: 99%;
+    width: 180px;
+    height: 180px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
 #blazorpic {
     border-radius: 99%;
     width: 180px;
