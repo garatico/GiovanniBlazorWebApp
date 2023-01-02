@@ -7,18 +7,18 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 25px;
+    padding-top: 25px;
 }
 
-    #social-links a {
-        vertical-align: middle;
-        padding: clamp(0.5vw, 1vw, 1.5vw);
-        background-color: rgba(175, 175, 175, 0.75);
-        border-radius: 50%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+#social-links a {
+    vertical-align: middle;
+    padding: clamp(0.5vw, 1vw, 1.5vw);
+    border-radius: 99%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
 
-        #social-links a svg {
-            width: clamp(25px, 75px, 125px);
-            height: clamp(25px, 75px, 125px);
-        }
+#social-links a svg {
+    width: clamp(2em, 4em, 6em);
+    height: clamp(2em, 4em, 6em);
+}
