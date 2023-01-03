@@ -1,11 +1,9 @@
 ﻿/* CONTENT RELATED STYLINGS */
-
-@media (max-width: 768px) {
+@media (max-width: 568px) {
     #spotify-player {
         display: none;
     }
 }
-
 
 
 .content {
@@ -39,17 +37,15 @@ ul#giovanni_desc {
 }
 #giovanni_desc li{
     font-family: 'Titillium Web', sans-serif;
-    font-size: clamp(1rem, 2.5vw, 6rem);
+    font-size: clamp(2vh, 4vh, 8vh);
     font-weight: 800;
     font-style: italic;
     margin-left: 5vh;
 }
 #welcome_desc {
     font-family: 'Titillium Web', sans-serif;
+    font-size: clamp(2vh, 4vh, 8vh);
     margin-right: 25vh;
-}
-#twitter-timeline {
-    margin-right: 5vw;
 }
 
 

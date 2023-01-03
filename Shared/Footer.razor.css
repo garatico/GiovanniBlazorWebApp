@@ -18,6 +18,6 @@
 }
 
 #social-links a svg {
-    width: clamp(2em, 4em, 6em);
-    height: clamp(2em, 4em, 6em);
+    width: clamp(4vh, 10vh, 16vh);
+    height: clamp(4vh, 10vh, 16vh);
 }

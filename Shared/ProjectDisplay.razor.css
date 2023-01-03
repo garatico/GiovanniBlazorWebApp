@@ -1,40 +1,40 @@
-﻿
+﻿/* PROJECT HTML STYLINGS */
+.project-wrapper { }
+
+.card {
+    border-style: solid;
+    border-width: 8px;
+    border-color: rgba(225, 135, 0, 1.0);
+    max-width: 400px;
+}
+
+h3.card_title {
+    color: white;
+    font-size: clamp(1rem, 2rem, 5rem);
+}
+
 p.card-text {
     color: dimgrey;
-    font-size: clamp(1rem, 1vw, 3rem);
+    font-size: clamp(10px, 16px, 32px);
 }
 
 
-#pyshypic {
-    border-radius: 99%;
+.card-header {
+    background-color: rgba(210,210,210, 0.9);
+}
+
+.card-img-top {
     width: 180px;
-    height: 180px;
+    max-width: 100%;
+    height: auto;
     padding: 5px;
     margin: 5px;
 }
 
+#pyshypic, #metapic, #facepic {
+    border-radius: 50%;
+}
 
 #blazorpic {
-    border-radius: 99%;
-    width: 180px;
-    height: 180px;
-    padding: 5px;
-    margin: 5px;
-}
-
-#metapic {
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    padding: 5px;
-    margin: 5px;
-}
-
-
-#facepic {
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    padding: 5px;
-    margin: 5px;
+    
 }
