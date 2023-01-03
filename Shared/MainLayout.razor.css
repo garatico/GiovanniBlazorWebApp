@@ -8,14 +8,12 @@
 .site-wrapper {
     max-height: 100vw;
     max-width: 95vw;
-    width: 99%;
-    height: 99%;
     border-radius: 10px;
     margin-top: clamp(0.25em, 0.5em, 1em);
     margin-bottom: clamp(0.25em, 0.5em, 1em);
     margin-left: clamp(0.5em, 1em, 2em);
     margin-right: clamp(0.5em, 1em, 2em);
-    background-image: linear-gradient(rgba(50, 10, 70, 0.10), rgba(50, 10, 70, 0.25)), url(./img/background.jpg);
+    background-image: linear-gradient(rgba(50, 10, 70, 0.40), rgba(50, 10, 70, 0.80)), url(./img/background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;

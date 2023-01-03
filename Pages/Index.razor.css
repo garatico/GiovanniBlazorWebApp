@@ -1,4 +1,13 @@
 ﻿/* CONTENT RELATED STYLINGS */
+
+@media (max-width: 768px) {
+    #spotify-player {
+        display: none;
+    }
+}
+
+
+
 .content {
     display: flex;
     flex-direction: row;

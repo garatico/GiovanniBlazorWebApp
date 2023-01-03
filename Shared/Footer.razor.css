@@ -6,13 +6,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    padding-bottom: clamp(10px, 25px, 50px);
+    padding-top: clamp(10px, 25px, 50px);
 }
 
 #social-links a {
-    vertical-align: middle;
-    padding: clamp(0.5vw, 1vw, 1.5vw);
+    padding: clamp(0.25vw, 0.50vw, 0.75vw);
     border-radius: 99%;
     margin-left: 0.5em;
     margin-right: 0.5em;
