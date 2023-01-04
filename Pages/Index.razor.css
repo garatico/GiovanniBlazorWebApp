@@ -1,42 +1,36 @@
 ﻿/* CONTENT RELATED STYLINGS */
 @media (max-width: 568px) {
-    #spotify-player {
-        display: none;
-    }
+    #spotify-player { display: none; }
+}
+@media (min-width: 569px) {
+    #spotify-player { display: block; }
 }
 
-
 .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin: 1em;
     padding: 1em;
 }
 
 /* INDEX PAGE SPECIFIC STYLING */
+.info {
+    display: block;
+}
 #info_index {
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
-    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-size: clamp(24px, 32px, 48px);
     font-weight: 800;
     color: white;
 }
 ul#giovanni_desc {
-    font-family: 'Titillium Web', sans-serif;
     margin-left: -1vw;
-    display: block;
+    list-style: none;
 }
 #giovanni_desc li{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: clamp(24px, 32px, 48px);
-    font-weight: 800;
-    font-style: italic;
-    margin-left: 1rem;
+    
 }
-#welcome_desc {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: clamp(24px, 32px, 48px);
+p#welcome_desc {
+    
 }
 
 

@@ -2,14 +2,11 @@
 .nav-container { }
 
 nav p {
-    font-size: clamp(3vh, 2vw, 2.5vw);
+    font-size: clamp(3vh, 3vw, 2.5vw);
     font-weight: 900;
     font-family: 'Titillium Web', sans-serif;
     color: white;
-    border-radius: 2px;
-    margin-top: 20px;
-    margin-right: 3vw;
-    margin-left: 1vh;
+    margin: 3vw;
 }
 
 
@@ -17,8 +14,8 @@ nav p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: linear-gradient(rgba(50, 10, 70, 0.85), rgba(50, 10, 70, 0.75));
-    border-radius: 10px;
+    background-image: linear-gradient(rgba(50, 10, 70, 0.95), rgba(50, 10, 70, 0.50));
+    border-radius: 5px;
     padding-left: 1vw;
 }
 
@@ -26,12 +23,12 @@ nav p {
     list-style: none;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 1vh;
-    margin-right: 1vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
 }
 
 #navbar ul li a {
-    font-size: clamp(3vh, 2vw, 2.5vw);
+    font-size: clamp(3vh, 3vw, 2.5vw);
     font-weight: 700;
     font-family: 'Titillium Web', sans-serif;
     color: white;
