@@ -1,0 +1,22 @@
+﻿<!-- w-20 = WIDTH = 30; -->
+<div class="album-wrapper">
+    <!-- border-5 = Border of width 5 px
+         border-primary = Border of color BLUE
+         m-b-3 = MARGIN BOTTOM = 3 -->
+    <div class="card">
+        <div class="card-header">
+            <img src="@myAlbum.albumImg" alt="@myAlbum.albumImgAlt" class="card-img-top" id="@myAlbum.albumImgId">
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">@myAlbum.albumTitle</h3>
+            <p class="card-text">@myAlbum.albumDate</p>
+            <a href="@myAlbum.albumLink" class="btn btn-primary"> Link to Project</a>
+        </div>
+    </div>
+</div>
+
+@code {
+    [EditorRequired]
+    [Parameter]
+    public Models.Album myAlbum { get; set; } = new();
+}

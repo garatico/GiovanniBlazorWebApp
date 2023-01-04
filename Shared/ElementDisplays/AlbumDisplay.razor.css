@@ -1,5 +1,6 @@
-﻿/* PROJECT HTML STYLINGS */
-.project-wrapper { }
+﻿/* ALBUM HTML STYLINGS */
+.album-wrapper {
+}
 
 .card {
     border-style: solid;
@@ -10,7 +11,7 @@
 
 h3.card_title {
     color: white;
-    font-size: clamp(1rem, 2rem, 5rem);
+    font-size: clamp(10px, 24px, 32px);
 }
 
 p.card-text {
@@ -18,23 +19,14 @@ p.card-text {
     font-size: clamp(10px, 16px, 32px);
 }
 
-
 .card-header {
     background-color: rgba(210,210,210, 0.9);
 }
 
 .card-img-top {
-    width: 180px;
+    width: 360px;
     max-width: 100%;
     height: auto;
     padding: 5px;
     margin: 5px;
-}
-
-#pyshypic, #metapic, #facepic {
-    border-radius: 50%;
-}
-
-#blazorpic {
-    
 }

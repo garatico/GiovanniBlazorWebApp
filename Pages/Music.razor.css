@@ -1,4 +1,29 @@
-﻿/* CONTENT RELATED STYLINGS */
+﻿
+@media (max-width: 500px) {
+    #albums_list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    #albums_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    #albums_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    #albums_list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* CONTENT RELATED STYLINGS */
 .content {
     display: flex;
     flex-direction: row;
@@ -15,20 +40,4 @@
     color: white;
 }
 
-/* MUSIC PAGE SPECIFIC STYLING */
-ul li#album_info {
-    list-style: none;
-}
 
-li#album_info div p{
-    display: block;
-    font-size: clamp(0.5vw, 2vw, 5vw);
-    font-weight: 500;
-    color: white;
-}
-
-#bs_album a img{
-    display: block;
-    width: clamp(10vw, 300px, 70vw);
-    height: clamp(10vw, 300px, 70vw);
-}

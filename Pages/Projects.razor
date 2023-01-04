@@ -14,11 +14,10 @@
     <div id="projects_list">
         @foreach (var project in myProjects)
         {
-            <ProjectDisplay myProject="project" />
+            <GiovanniBlazorWebAppE.Shared.ElementDisplays.ProjectDisplay myProject="project" />
         }
     </div>
 </div>
-
 
 @code {
     // Initializes new empty projects list with get/set
