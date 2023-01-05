@@ -1,37 +1,95 @@
 ﻿/* CONTENT RELATED STYLINGS */
-@media (max-width: 568px) {
+/* BETWEEN (0px to 535px) MEDIA QUERIES */
+@media (max-width: 535px) {
     #spotify-player { display: none; }
+    .content {
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+    #giovanni-pic img {
+        width: 150px;
+        height: auto;
+        border-radius: 15px;
+    }
 }
-@media (min-width: 569px) {
-    #spotify-player { display: block; }
+/* BETWEEN (401px to 878px) MEDIA QUERIES */
+@media (min-width: 535px) and (max-width: 878px) {
+    #spotify-player { display: grid; }
+    .content {
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+    #giovanni-pic img {
+        width: 350px;
+        height: auto;
+        border-radius: 20px;
+    }
+}
+
+/* BETWEEN (878px to 1068px) MEDIA QUERIES */
+@media (min-width: 878px) and (max-width: 1068px) {
+    #spotify-player { display: grid; }
+    .content {
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        justify-items: stretch;
+    }
+    #giovanni-pic img {
+        width: 35vw;
+        height: auto;
+        border-radius: 40px;
+    }
+
+}
+/* BETWEEN (1068px to inf px) MEDIA QUERIES */
+@media (min-width: 1068px) {
+    #spotify-player { display: grid; }
+    .content {
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        justify-items: stretch;
+    }
+    #giovanni-pic img {
+        width: 500px;
+        height: auto;
+        border-radius: 50px;
+    }
 }
 
 .content {
-    margin: 1em;
-    padding: 1em;
+    display: grid;
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+}
+
+/* CURRENT GRID IS A [2 X 2] */
+/* GRID ITEMS THAT SPAN 2 COLUMNS */
+.grid-column-span-2 { }
+/* GRID ITEMS THAT SPAN 2 ROWS */
+.grid-row-span-2 { 
+    grid-row-start: span 2; 
+    
 }
 
 /* INDEX PAGE SPECIFIC STYLING */
-.info {
-    display: block;
-}
-#info_index {
+.info { }
+#info_index { }
+#giovanni_desc {
     font-family: 'Titillium Web', sans-serif;
-    text-decoration: none;
     font-size: clamp(24px, 32px, 48px);
     font-weight: 800;
     color: white;
-}
-ul#giovanni_desc {
-    margin-left: -1vw;
     list-style: none;
 }
-#giovanni_desc li{
-    
-}
-p#welcome_desc {
-    
-}
+#giovanni_desc li{ }
+p#welcome_desc { }
+
+
 
 
 
