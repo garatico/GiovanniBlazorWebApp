@@ -7,63 +7,63 @@
         justify-content: space-evenly;
         justify-items: center;
     }
-    #giovanni-pic img {
-        width: 150px;
-        height: auto;
-        border-radius: 15px;
-    }
 }
 /* BETWEEN (401px to 878px) MEDIA QUERIES */
 @media (min-width: 535px) and (max-width: 878px) {
-    #spotify-player { display: grid; }
+    #spotify-player { display: none; }
     .content {
         grid-template-columns: 1fr;
         justify-content: space-evenly;
         justify-items: center;
     }
-    #giovanni-pic img {
-        width: 350px;
-        height: auto;
-        border-radius: 20px;
-    }
 }
 
-/* BETWEEN (878px to 1068px) MEDIA QUERIES */
-@media (min-width: 878px) and (max-width: 1068px) {
+/* BETWEEN (878px to inf px) MEDIA QUERIES */
+@media (min-width: 878px) {
     #spotify-player { display: grid; }
     .content {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 0.75fr;
         justify-content: space-evenly;
         justify-items: stretch;
     }
-    #giovanni-pic img {
-        width: 35vw;
-        height: auto;
-        border-radius: 40px;
-    }
+}
+
+#spotify-player {
+    /* ANIMATIONS */
+    animation-name: fadeIn, plusXIn;
+    animation-duration: 3s, 2s;
+    animation-delay: 0s, 0s;
+}
+#giovanni-pic img {
+    width: 35vw;
+    height: auto;
+    border-radius: 20px;
+    /* ANIMATIONS */
+    animation-name: fadeIn, minusXIn;
+    animation-duration: 3s, 2s;
+    animation-delay: 0s, 0s;
+    animation-fill-mode: forwards;
 
 }
-/* BETWEEN (1068px to inf px) MEDIA QUERIES */
-@media (min-width: 1068px) {
-    #spotify-player { display: grid; }
-    .content {
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-evenly;
-        justify-items: stretch;
-    }
-    #giovanni-pic img {
-        width: 500px;
-        height: auto;
-        border-radius: 50px;
-    }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes minusXIn {
+    0% { margin-left: 100%; }
+    100% { margin-left: 0%; }
+}
+@keyframes plusXIn {
+    0% { margin-left: -100%; }
+    100% { margin-left: 0%; }
 }
 
 .content {
     display: grid;
     gap: 1.5rem;
     padding-block: 1.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     align-items: center;
 }
 
@@ -71,10 +71,7 @@
 /* GRID ITEMS THAT SPAN 2 COLUMNS */
 .grid-column-span-2 { }
 /* GRID ITEMS THAT SPAN 2 ROWS */
-.grid-row-span-2 { 
-    grid-row-start: span 2; 
-    
-}
+.grid-row-span-2 { grid-row-start: span 2; }
 
 /* INDEX PAGE SPECIFIC STYLING */
 .info { }
@@ -85,6 +82,10 @@
     font-weight: 800;
     color: white;
     list-style: none;
+    /* ANIMATIONS */
+    animation-name: fadeIn, plusXIn;
+    animation-duration: 3s, 2s;
+    animation-delay: 0s, 0s;
 }
 #giovanni_desc li{ }
 p#welcome_desc { }

@@ -1,4 +1,12 @@
-﻿/* PROJECT HTML STYLINGS */
+﻿/*
+@media (max-width: 535px) {
+    p.card-text {
+        display: none;
+    }
+}
+*/
+
+/* PROJECT HTML STYLINGS */
 .project-wrapper { }
 
 .card {
