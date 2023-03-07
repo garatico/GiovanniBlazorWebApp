@@ -8,8 +8,8 @@
         justify-items: center;
     }
 }
-/* BETWEEN (401px to 878px) MEDIA QUERIES */
-@media (min-width: 535px) and (max-width: 878px) {
+/* BETWEEN (535px to 1121px) MEDIA QUERIES */
+@media (min-width: 535px) and (max-width: 1121px) {
     #spotify-player { display: none; }
     .content {
         grid-template-columns: 1fr;
@@ -18,8 +18,8 @@
     }
 }
 
-/* BETWEEN (878px to inf px) MEDIA QUERIES */
-@media (min-width: 878px) {
+/* BETWEEN (1121px to inf px) MEDIA QUERIES */
+@media (min-width: 1121px) {
     #spotify-player { display: grid; }
     .content {
         grid-template-columns: 1fr 2fr;
@@ -53,10 +53,10 @@
 
 .content {
     display: grid;
-    gap: 1.5rem;
-    padding-block: 1.5rem;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    gap: 1rem;
+    padding-block: 1rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
     align-items: center;
 }
 
@@ -67,11 +67,12 @@
 .grid-row-span-2 { grid-row-start: span 2; }
 
 /* INDEX PAGE SPECIFIC STYLING */
-.info { }
-#info_index { }
+#info_index {
+    margin: 1rem;
+}
 #giovanni_desc {
     font-family: 'Titillium Web', sans-serif;
-    font-size: clamp(1vh, 2.5vw, 4vw);
+    font-size: clamp(28px, 40px, 56px);
     font-weight: 800;
     color: white;
     list-style: none;
@@ -88,7 +89,10 @@
     color: white;
     line-height: 1.25; /* Set the line height to 1.5 times the font size */
     text-indent: 25px; /* Add a 20px indent to the left of the text */
-    margin: 5px;
+    /* ANIMATIONS */
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
 }
 #welcome_desc p {
     padding: 5px;
