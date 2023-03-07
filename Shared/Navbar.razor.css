@@ -2,42 +2,62 @@
 .nav-container { }
 
 nav p {
-    font-size: clamp(3vh, 3vw, 2.5vw);
-    font-weight: 900;
+    font-size: clamp(1vh, 2vw, 3vw);
+    font-weight: 700;
     font-family: 'Titillium Web', sans-serif;
     color: white;
-    margin: 3vw;
+    margin: 1vw;
 }
-
 
 #navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: linear-gradient(rgba(50, 10, 70, 0.95), rgba(50, 10, 70, 0.50));
-    border-radius: 5px;
-    padding-left: 1vw;
+    background-image: linear-gradient(rgba(60, 30, 90, 0.99), rgba(60, 30, 90, 0.90));
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
 #navbar ul li {
     list-style: none;
     display: inline-block;
-    vertical-align: middle;
-    margin-left: 2vh;
-    margin-right: 2vh;
+    vertical-align: bottom;
+    margin-left: 1vh;
+    margin-right: 1vh;
 }
 
 #navbar ul li a {
-    font-size: clamp(3vh, 3vw, 2.5vw);
+    position: relative;
+    /* STATIC PROPERTIES */
+    font-size: clamp(1vh, 2vw, 3vw);
     font-weight: 700;
     font-family: 'Titillium Web', sans-serif;
     color: white;
     border-radius: 2px;
     text-shadow: 0px 0px 5px grey;
 }
-
 #navbar ul li a:hover {
     text-shadow: 0px 0px 10px lightgrey;
+}
+
+/* NAVBAR LINK ANIMATIONS */
+#navbar ul li a::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    /* PROPERTIES WITH ANIMATIONS */
+    transition: width 0.3s ease, opacity 0.3s ease-in-out;
+    width: 0;
+    opacity: 0;
+}
+
+#navbar ul li a:hover::before {
+    width: 100%;
+    opacity: 1;
+    
 }
 
 

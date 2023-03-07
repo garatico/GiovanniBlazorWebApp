@@ -1,16 +1,51 @@
 ﻿/* CONTENT RELATED STYLINGS */
 .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 1em;
-    padding: 1em;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    justify-content: space-evenly;
+    justify-items: stretch;
+    padding: 2vw;
+    margin: 2vw;
 }
 
-.info {
+#info_about {
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
-    font-size: clamp(1.5rem, 2vw, 4rem);
-    font-weight: 800;
+    font-size: clamp(1vh, 2vw, 3vw);
+    font-weight: 500;
     color: white;
+    line-height: 1.25; /* Set the line height to 1.5 times the font size */
+    text-indent: 25px; /* Add a 20px indent to the left of the text */
+}
+
+#giovanni-pic img {
+    width: 30vw;
+    height: auto;
+    border: solid;
+    border-radius: 10px;
+    /*transform: rotateX(0deg) rotateY(45deg) rotateZ(0deg);*/
+    /* ANIMATIONS */
+    animation-name: fadeIn, minusXIn;
+    animation-duration: 3s, 2s;
+    animation-delay: 0s, 0s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes minusXIn {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
 }

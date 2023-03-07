@@ -22,11 +22,13 @@
 @media (min-width: 878px) {
     #spotify-player { display: grid; }
     .content {
-        grid-template-columns: 1fr 0.75fr;
+        grid-template-columns: 1fr 2fr;
         justify-content: space-evenly;
         justify-items: stretch;
     }
 }
+
+
 
 #spotify-player {
     /* ANIMATIONS */
@@ -34,17 +36,8 @@
     animation-duration: 3s, 2s;
     animation-delay: 0s, 0s;
 }
-#giovanni-pic img {
-    width: 35vw;
-    height: auto;
-    border-radius: 20px;
-    /* ANIMATIONS */
-    animation-name: fadeIn, minusXIn;
-    animation-duration: 3s, 2s;
-    animation-delay: 0s, 0s;
-    animation-fill-mode: forwards;
 
-}
+/* DEFINES KEYFRAME RULES FOR CSS PROPERTIES */
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -62,8 +55,8 @@
     display: grid;
     gap: 1.5rem;
     padding-block: 1.5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 3vw;
+    margin-right: 3vw;
     align-items: center;
 }
 
@@ -78,7 +71,7 @@
 #info_index { }
 #giovanni_desc {
     font-family: 'Titillium Web', sans-serif;
-    font-size: clamp(24px, 32px, 48px);
+    font-size: clamp(1vh, 2.5vw, 4vw);
     font-weight: 800;
     color: white;
     list-style: none;
@@ -87,8 +80,19 @@
     animation-duration: 3s, 2s;
     animation-delay: 0s, 0s;
 }
-#giovanni_desc li{ }
-p#welcome_desc { }
+
+#welcome_desc {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: clamp(16px, 28px, 36px);
+    font-weight: 500;
+    color: white;
+    line-height: 1.25; /* Set the line height to 1.5 times the font size */
+    text-indent: 25px; /* Add a 20px indent to the left of the text */
+    margin: 5px;
+}
+#welcome_desc p {
+    padding: 5px;
+}
 
 
 
