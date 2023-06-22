@@ -2,33 +2,14 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    background-color: rgb(15, 0, 15);
+    background-color: rgb(30, 0, 15);
 }
 
 .site-wrapper {
     max-width: 99vw;
     border-radius: 10px;
-    background-image: linear-gradient(rgba(230, 200, 230, 0.85), rgba(50, 10, 70, 0.95)), url(./img/background.jpg);
+    background-image: linear-gradient(rgba(120, 80, 120, 0.98), rgba(120, 80, 120, 0.98)), url(./img/background.jpg);
     background-position: top;
     background-size: cover;
     position: relative;
-    /* ANIMATIONS */
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
 }
-
-
-
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-   
