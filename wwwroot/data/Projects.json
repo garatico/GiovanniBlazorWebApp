@@ -1,7 +1,7 @@
 [
   {
     "projectTitle": "Xbox TrueAchievements Analysis",
-    "projectDescription": "Data science time series analysis, modeling and webscraping",
+    "projectDescription": "Data science time series analysis, modeling and webscraping of True Achievements website. Demonstrates time series and forecasting skills.",
     "projectLink": "https://github.com/garatico/XboxTA",
     "projectImg": "../img/xbox-ball.png",
     "projectImgAlt": "XboxBall",
