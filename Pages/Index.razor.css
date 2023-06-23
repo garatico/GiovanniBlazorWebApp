@@ -27,31 +27,42 @@
 .content {
     display: grid;
     align-items: center;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    justify-content: space-evenly;
+    justify-items: stretch;
+    padding: 1vw;
+    margin: 1vw;
+}
+#giovanni_headline {
+    font-weight: 900;
+    font-size: clamp(30px, 40px, 50px);
+    font-style: italic;
 }
 
 /* INDEX PAGE SPECIFIC STYLING */
-#info_index {
-    margin: 5rem;
-}
 #giovanni_desc {
     font-family: 'Titillium Web', sans-serif;
-    font-size: clamp(25px, 35px, 45px);
-    font-weight: 600;
+    font-size: clamp(20px, 30px, 40px);
+    font-weight: 400;
     color: white;
     list-style: none;
+    line-height: 1.50;
 }
 
 #welcome_desc {
     font-family: 'Titillium Web', sans-serif;
-    font-size: clamp(28px, 40px, 56px);
+    font-size: clamp(25px, 35px, 45px);
     font-weight: 600;
+    font-style: italic;
     color: white;
-    line-height: 1.10; /* Set the line height to 1.5 times the font size */
-    margin-top: 200px;
-    margin-bottom: 200px;
 }
 
-
-
-
+#giovanni-pic img {
+    width: 30vw;
+    height: auto;
+    border: solid;
+    border-width: 3px;
+    border-radius: 25px;
+}
 
