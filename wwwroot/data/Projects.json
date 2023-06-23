@@ -1,5 +1,13 @@
 [
   {
+    "projectTitle": "Xbox TrueAchievements Analysis",
+    "projectDescription": "Data science time series analysis, modeling and webscraping",
+    "projectLink": "https://github.com/garatico/XboxTA",
+    "projectImg": "../img/xbox-ball.png",
+    "projectImgAlt": "XboxBall",
+    "projectImgId": "xboxballpic"
+  },
+  {
     "projectTitle": "OkCupid Gender Prediction",
     "projectDescription": "Machine learning project that predicts the gender of an OkCupid dating profile based on different profile prompt question responses using the Naive Bayes algorithm.",
     "projectLink": "https://github.com/garatico/OkCupidNaiveBayes",
@@ -39,5 +47,4 @@
     "projectImgAlt": "Giovanni",
     "projectImgId": "facepic"
   }
-
 ]
