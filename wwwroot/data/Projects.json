@@ -1,15 +1,16 @@
 [
   {
     "projectTitle": "Xbox TrueAchievements Analysis",
-    "projectDescription": "Data science time series analysis, modeling and webscraping of True Achievements website. Demonstrates time series and forecasting skills.",
+    "projectDescription": "Data science time series analysis, modeling and webscraping of True Achievements website. Demonstrates ability to create interactive dashboards and time series and forecasting skills.",
     "projectLink": "https://github.com/garatico/XboxTA",
     "projectImg": "../img/xbox-ball.png",
     "projectImgAlt": "XboxBall",
     "projectImgId": "xboxballpic"
   },
   {
-    "projectTitle": "OkCupid Gender Prediction",
-    "projectDescription": "Machine learning project that predicts the gender of an OkCupid dating profile based on different profile prompt question responses using the Naive Bayes algorithm.",
+    "projectTitle": "Naïve Bayes NLP Classifier OkCupid",
+    "projectDescription": "Machine learning project that predicts the demographics of an OkCupid dating profile based on different profile prompt question responses using the Naive Bayes algorithm. Demonstrates familiarity with NLP.",
+    "projectViewLink": "https://garatico.github.io/OkCupidNaiveBayes/",
     "projectLink": "https://github.com/garatico/OkCupidNaiveBayes",
     "projectImg": "../img/okcupid-logo.png",
     "projectImgAlt": "OkCupid",
@@ -26,6 +27,7 @@
   {
     "projectTitle": "Personal Web App Blazor",
     "projectDescription": "Demonstrates basics of web frameworks in a front-end focus using Blazor and C#. Utilizes Razor components and ability to deploy a simple application.",
+    "projectViewLink": "https://giovanni-aratico.netlify.app",
     "projectLink": "https://github.com/garatico/GiovanniBlazorWebApp",
     "projectImg": "../img/blazor-logo.png",
     "projectImgAlt": "Blazor",

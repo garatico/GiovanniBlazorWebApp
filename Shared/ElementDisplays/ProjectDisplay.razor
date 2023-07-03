@@ -12,7 +12,15 @@
         <div class="card-body">
             <h3 class="card-title">@myProject.projectTitle</h3>
             <p class="card-text">@myProject.projectDescription</p>
-            <a href="@myProject.projectLink" class="btn btn-primary"> Link to Project</a>
+            <div class="btn-group" role="group">
+                @if (!string.IsNullOrEmpty(myProject.projectViewLink))
+                {
+                    <a href="@myProject.projectViewLink" class="btn btn-outline-primary">View Project</a>
+                }
+                <a href="@myProject.projectLink" class="btn btn-outline-info">Link to Project</a>
+            </div>
+
+
         </div>
     </div>
 </div>

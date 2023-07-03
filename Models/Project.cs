@@ -6,6 +6,7 @@ namespace GiovanniBlazorWebAppE.Models
     {
         public string projectTitle { get; set; }
         public string projectDescription { get; set; }
+        public string projectViewLink { get; set; }
         public string projectLink { get; set; }
         public string projectImg { get; set; }
         public string projectImgAlt { get; set; }
