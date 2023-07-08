@@ -2,6 +2,7 @@
   {
     "projectTitle": "Xbox TrueAchievements Analysis",
     "projectDescription": "Data science time series analysis, modeling and webscraping of True Achievements website. Demonstrates ability to create interactive dashboards and time series and forecasting skills.",
+    "projectViewLink": "https://garatico.github.io/XboxTA/",
     "projectLink": "https://github.com/garatico/XboxTA",
     "projectImg": "../img/xbox-ball.png",
     "projectImgAlt": "XboxBall",
@@ -32,21 +33,5 @@
     "projectImg": "../img/blazor-logo.png",
     "projectImgAlt": "Blazor",
     "projectImgId": "blazorpic"
-  },
-  {
-    "projectTitle": "Metacritic Webscraper",
-    "projectDescription": "Demonstrates basic programming skills in Python. Utilizes the libraries Requests, NumPy and BeautifulSoup to collect data and output to usable formats.",
-    "projectLink": "https://github.com/garatico/Metacritic-Scraper",
-    "projectImg": "../img/meta.png",
-    "projectImgAlt": "Metacritic",
-    "projectImgId": "metapic"
-  },
-  {
-    "projectTitle": "Personal Website",
-    "projectDescription": "Demonstrates basic web development skills including HTML, CSS and JavaScript in a static web app. Utilizes Bootstrap styling and demonstrates knowledge of git version control",
-    "projectLink": "https://github.com/garatico/garatico.github.io",
-    "projectImg": "../img/face.jpg",
-    "projectImgAlt": "Giovanni",
-    "projectImgId": "facepic"
   }
 ]
